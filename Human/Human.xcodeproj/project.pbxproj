@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6AF665E1A5C2A28005BFB40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF665D1A5C2A28005BFB40 /* main.m */; };
+		B6AF66611A5C2A28005BFB40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66601A5C2A28005BFB40 /* AppDelegate.m */; };
+		B6AF66691A5C2A28005BFB40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AF66681A5C2A28005BFB40 /* Images.xcassets */; };
+		B6AF666C1A5C2A28005BFB40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AF666A1A5C2A28005BFB40 /* LaunchScreen.xib */; };
+		B6AF66781A5C2A28005BFB40 /* HumanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66771A5C2A28005BFB40 /* HumanTests.m */; };
+		B6AF66831A5C3878005BFB40 /* Arm.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66821A5C3878005BFB40 /* Arm.m */; };
+		B6AF66861A5C3887005BFB40 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66851A5C3887005BFB40 /* Hand.m */; };
+		B6AF66891A5C3894005BFB40 /* Finger.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66881A5C3894005BFB40 /* Finger.m */; };
+		B6AF668C1A5C3921005BFB40 /* Thumb.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF668B1A5C3921005BFB40 /* Thumb.m */; };
+		B6AF668F1A5C4E36005BFB40 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF668E1A5C4E36005BFB40 /* Human.m */; };
+		B6AF66921A5C6B6D005BFB40 /* Body.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66911A5C6B6D005BFB40 /* Body.m */; };
+		B6AF66951A5C7177005BFB40 /* Leg.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66941A5C7177005BFB40 /* Leg.m */; };
+		B6AF66981A5C7181005BFB40 /* Head.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66971A5C7181005BFB40 /* Head.m */; };
+		B6AF669B1A5C72BF005BFB40 /* Mouth.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF669A1A5C72BE005BFB40 /* Mouth.m */; };
+		B6AF669E1A5C72F9005BFB40 /* Ear.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF669D1A5C72F9005BFB40 /* Ear.m */; };
+		B6AF66A41A5C7405005BFB40 /* Knee.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66A31A5C7405005BFB40 /* Knee.m */; };
+		B6AF66A71A5C7411005BFB40 /* Foot.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66A61A5C7411005BFB40 /* Foot.m */; };
+		B6AF66AA1A5C7429005BFB40 /* Toe.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66A91A5C7429005BFB40 /* Toe.m */; };
+		B6AF66AD1A5C74AD005BFB40 /* Nose.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66AC1A5C74AD005BFB40 /* Nose.m */; };
+		B6AF66B01A5C74D0005BFB40 /* Eye.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66AF1A5C74D0005BFB40 /* Eye.m */; };
+		B6AF66B31A5C74E2005BFB40 /* Hair.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF66B21A5C74E2005BFB40 /* Hair.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6AF66721A5C2A28005BFB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6AF66501A5C2A28005BFB40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6AF66571A5C2A28005BFB40;
+			remoteInfo = Human;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6AF66581A5C2A28005BFB40 /* Human.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Human.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AF665C1A5C2A28005BFB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AF665D1A5C2A28005BFB40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6AF665F1A5C2A28005BFB40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6AF66601A5C2A28005BFB40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6AF66681A5C2A28005BFB40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6AF666B1A5C2A28005BFB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B6AF66711A5C2A28005BFB40 /* HumanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AF66761A5C2A28005BFB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AF66771A5C2A28005BFB40 /* HumanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumanTests.m; sourceTree = "<group>"; };
+		B6AF66811A5C3878005BFB40 /* Arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arm.h; sourceTree = "<group>"; };
+		B6AF66821A5C3878005BFB40 /* Arm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arm.m; sourceTree = "<group>"; };
+		B6AF66841A5C3887005BFB40 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		B6AF66851A5C3887005BFB40 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		B6AF66871A5C3894005BFB40 /* Finger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finger.h; sourceTree = "<group>"; };
+		B6AF66881A5C3894005BFB40 /* Finger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finger.m; sourceTree = "<group>"; };
+		B6AF668A1A5C3921005BFB40 /* Thumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thumb.h; sourceTree = "<group>"; };
+		B6AF668B1A5C3921005BFB40 /* Thumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thumb.m; sourceTree = "<group>"; };
+		B6AF668D1A5C4E35005BFB40 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B6AF668E1A5C4E36005BFB40 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B6AF66901A5C6B6C005BFB40 /* Body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Body.h; sourceTree = "<group>"; };
+		B6AF66911A5C6B6D005BFB40 /* Body.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Body.m; sourceTree = "<group>"; };
+		B6AF66931A5C7177005BFB40 /* Leg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leg.h; sourceTree = "<group>"; };
+		B6AF66941A5C7177005BFB40 /* Leg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leg.m; sourceTree = "<group>"; };
+		B6AF66961A5C7181005BFB40 /* Head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Head.h; sourceTree = "<group>"; };
+		B6AF66971A5C7181005BFB40 /* Head.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Head.m; sourceTree = "<group>"; };
+		B6AF66991A5C72BE005BFB40 /* Mouth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mouth.h; sourceTree = "<group>"; };
+		B6AF669A1A5C72BE005BFB40 /* Mouth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mouth.m; sourceTree = "<group>"; };
+		B6AF669C1A5C72F9005BFB40 /* Ear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ear.h; sourceTree = "<group>"; };
+		B6AF669D1A5C72F9005BFB40 /* Ear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ear.m; sourceTree = "<group>"; };
+		B6AF66A21A5C7405005BFB40 /* Knee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knee.h; sourceTree = "<group>"; };
+		B6AF66A31A5C7405005BFB40 /* Knee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Knee.m; sourceTree = "<group>"; };
+		B6AF66A51A5C7411005BFB40 /* Foot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foot.h; sourceTree = "<group>"; };
+		B6AF66A61A5C7411005BFB40 /* Foot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foot.m; sourceTree = "<group>"; };
+		B6AF66A81A5C7429005BFB40 /* Toe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toe.h; sourceTree = "<group>"; };
+		B6AF66A91A5C7429005BFB40 /* Toe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toe.m; sourceTree = "<group>"; };
+		B6AF66AB1A5C74AD005BFB40 /* Nose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nose.h; sourceTree = "<group>"; };
+		B6AF66AC1A5C74AD005BFB40 /* Nose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nose.m; sourceTree = "<group>"; };
+		B6AF66AE1A5C74D0005BFB40 /* Eye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eye.h; sourceTree = "<group>"; };
+		B6AF66AF1A5C74D0005BFB40 /* Eye.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eye.m; sourceTree = "<group>"; };
+		B6AF66B11A5C74E2005BFB40 /* Hair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hair.h; sourceTree = "<group>"; };
+		B6AF66B21A5C74E2005BFB40 /* Hair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hair.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6AF66551A5C2A28005BFB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AF666E1A5C2A28005BFB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6AF664F1A5C2A28005BFB40 = {
+			isa = PBXGroup;
+			children = (
+				B6AF665A1A5C2A28005BFB40 /* Human */,
+				B6AF66741A5C2A28005BFB40 /* HumanTests */,
+				B6AF66591A5C2A28005BFB40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6AF66591A5C2A28005BFB40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF66581A5C2A28005BFB40 /* Human.app */,
+				B6AF66711A5C2A28005BFB40 /* HumanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6AF665A1A5C2A28005BFB40 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF66A11A5C7391005BFB40 /* Leg, Knee, Foot, Toe */,
+				B6AF66A01A5C733C005BFB40 /* Head, Mouth, Ear, Nose, Eye, Hair */,
+				B6AF669F1A5C7317005BFB40 /* Arm, Hand, Fingers, Thumb */,
+				B6AF665B1A5C2A28005BFB40 /* Supporting Files */,
+				B6AF668D1A5C4E35005BFB40 /* Human.h */,
+				B6AF668E1A5C4E36005BFB40 /* Human.m */,
+				B6AF66901A5C6B6C005BFB40 /* Body.h */,
+				B6AF66911A5C6B6D005BFB40 /* Body.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		B6AF665B1A5C2A28005BFB40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF665F1A5C2A28005BFB40 /* AppDelegate.h */,
+				B6AF66601A5C2A28005BFB40 /* AppDelegate.m */,
+				B6AF66681A5C2A28005BFB40 /* Images.xcassets */,
+				B6AF666A1A5C2A28005BFB40 /* LaunchScreen.xib */,
+				B6AF665C1A5C2A28005BFB40 /* Info.plist */,
+				B6AF665D1A5C2A28005BFB40 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6AF66741A5C2A28005BFB40 /* HumanTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF66771A5C2A28005BFB40 /* HumanTests.m */,
+				B6AF66751A5C2A28005BFB40 /* Supporting Files */,
+			);
+			path = HumanTests;
+			sourceTree = "<group>";
+		};
+		B6AF66751A5C2A28005BFB40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF66761A5C2A28005BFB40 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6AF669F1A5C7317005BFB40 /* Arm, Hand, Fingers, Thumb */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF66811A5C3878005BFB40 /* Arm.h */,
+				B6AF66821A5C3878005BFB40 /* Arm.m */,
+				B6AF66841A5C3887005BFB40 /* Hand.h */,
+				B6AF66851A5C3887005BFB40 /* Hand.m */,
+				B6AF66871A5C3894005BFB40 /* Finger.h */,
+				B6AF66881A5C3894005BFB40 /* Finger.m */,
+				B6AF668A1A5C3921005BFB40 /* Thumb.h */,
+				B6AF668B1A5C3921005BFB40 /* Thumb.m */,
+			);
+			name = "Arm, Hand, Fingers, Thumb";
+			sourceTree = "<group>";
+		};
+		B6AF66A01A5C733C005BFB40 /* Head, Mouth, Ear, Nose, Eye, Hair */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF66961A5C7181005BFB40 /* Head.h */,
+				B6AF66971A5C7181005BFB40 /* Head.m */,
+				B6AF66991A5C72BE005BFB40 /* Mouth.h */,
+				B6AF669A1A5C72BE005BFB40 /* Mouth.m */,
+				B6AF669C1A5C72F9005BFB40 /* Ear.h */,
+				B6AF669D1A5C72F9005BFB40 /* Ear.m */,
+				B6AF66AB1A5C74AD005BFB40 /* Nose.h */,
+				B6AF66AC1A5C74AD005BFB40 /* Nose.m */,
+				B6AF66AE1A5C74D0005BFB40 /* Eye.h */,
+				B6AF66AF1A5C74D0005BFB40 /* Eye.m */,
+				B6AF66B11A5C74E2005BFB40 /* Hair.h */,
+				B6AF66B21A5C74E2005BFB40 /* Hair.m */,
+			);
+			name = "Head, Mouth, Ear, Nose, Eye, Hair";
+			sourceTree = "<group>";
+		};
+		B6AF66A11A5C7391005BFB40 /* Leg, Knee, Foot, Toe */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF66931A5C7177005BFB40 /* Leg.h */,
+				B6AF66941A5C7177005BFB40 /* Leg.m */,
+				B6AF66A21A5C7405005BFB40 /* Knee.h */,
+				B6AF66A31A5C7405005BFB40 /* Knee.m */,
+				B6AF66A51A5C7411005BFB40 /* Foot.h */,
+				B6AF66A61A5C7411005BFB40 /* Foot.m */,
+				B6AF66A81A5C7429005BFB40 /* Toe.h */,
+				B6AF66A91A5C7429005BFB40 /* Toe.m */,
+			);
+			name = "Leg, Knee, Foot, Toe";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6AF66571A5C2A28005BFB40 /* Human */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6AF667B1A5C2A28005BFB40 /* Build configuration list for PBXNativeTarget "Human" */;
+			buildPhases = (
+				B6AF66541A5C2A28005BFB40 /* Sources */,
+				B6AF66551A5C2A28005BFB40 /* Frameworks */,
+				B6AF66561A5C2A28005BFB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Human;
+			productName = Human;
+			productReference = B6AF66581A5C2A28005BFB40 /* Human.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6AF66701A5C2A28005BFB40 /* HumanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6AF667E1A5C2A28005BFB40 /* Build configuration list for PBXNativeTarget "HumanTests" */;
+			buildPhases = (
+				B6AF666D1A5C2A28005BFB40 /* Sources */,
+				B6AF666E1A5C2A28005BFB40 /* Frameworks */,
+				B6AF666F1A5C2A28005BFB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6AF66731A5C2A28005BFB40 /* PBXTargetDependency */,
+			);
+			name = HumanTests;
+			productName = HumanTests;
+			productReference = B6AF66711A5C2A28005BFB40 /* HumanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6AF66501A5C2A28005BFB40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Bobby Towers";
+				TargetAttributes = {
+					B6AF66571A5C2A28005BFB40 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B6AF66701A5C2A28005BFB40 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B6AF66571A5C2A28005BFB40;
+					};
+				};
+			};
+			buildConfigurationList = B6AF66531A5C2A28005BFB40 /* Build configuration list for PBXProject "Human" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6AF664F1A5C2A28005BFB40;
+			productRefGroup = B6AF66591A5C2A28005BFB40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6AF66571A5C2A28005BFB40 /* Human */,
+				B6AF66701A5C2A28005BFB40 /* HumanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6AF66561A5C2A28005BFB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AF666C1A5C2A28005BFB40 /* LaunchScreen.xib in Resources */,
+				B6AF66691A5C2A28005BFB40 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AF666F1A5C2A28005BFB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6AF66541A5C2A28005BFB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AF66A41A5C7405005BFB40 /* Knee.m in Sources */,
+				B6AF669E1A5C72F9005BFB40 /* Ear.m in Sources */,
+				B6AF66951A5C7177005BFB40 /* Leg.m in Sources */,
+				B6AF66A71A5C7411005BFB40 /* Foot.m in Sources */,
+				B6AF668F1A5C4E36005BFB40 /* Human.m in Sources */,
+				B6AF66B31A5C74E2005BFB40 /* Hair.m in Sources */,
+				B6AF668C1A5C3921005BFB40 /* Thumb.m in Sources */,
+				B6AF66AD1A5C74AD005BFB40 /* Nose.m in Sources */,
+				B6AF66AA1A5C7429005BFB40 /* Toe.m in Sources */,
+				B6AF66861A5C3887005BFB40 /* Hand.m in Sources */,
+				B6AF66831A5C3878005BFB40 /* Arm.m in Sources */,
+				B6AF66981A5C7181005BFB40 /* Head.m in Sources */,
+				B6AF66611A5C2A28005BFB40 /* AppDelegate.m in Sources */,
+				B6AF66B01A5C74D0005BFB40 /* Eye.m in Sources */,
+				B6AF665E1A5C2A28005BFB40 /* main.m in Sources */,
+				B6AF669B1A5C72BF005BFB40 /* Mouth.m in Sources */,
+				B6AF66891A5C3894005BFB40 /* Finger.m in Sources */,
+				B6AF66921A5C6B6D005BFB40 /* Body.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AF666D1A5C2A28005BFB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AF66781A5C2A28005BFB40 /* HumanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6AF66731A5C2A28005BFB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6AF66571A5C2A28005BFB40 /* Human */;
+			targetProxy = B6AF66721A5C2A28005BFB40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6AF666A1A5C2A28005BFB40 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6AF666B1A5C2A28005BFB40 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6AF66791A5C2A28005BFB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6AF667A1A5C2A28005BFB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6AF667C1A5C2A28005BFB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Human/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6AF667D1A5C2A28005BFB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Human/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6AF667F1A5C2A28005BFB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HumanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Human.app/Human";
+			};
+			name = Debug;
+		};
+		B6AF66801A5C2A28005BFB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HumanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Human.app/Human";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6AF66531A5C2A28005BFB40 /* Build configuration list for PBXProject "Human" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AF66791A5C2A28005BFB40 /* Debug */,
+				B6AF667A1A5C2A28005BFB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6AF667B1A5C2A28005BFB40 /* Build configuration list for PBXNativeTarget "Human" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AF667C1A5C2A28005BFB40 /* Debug */,
+				B6AF667D1A5C2A28005BFB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6AF667E1A5C2A28005BFB40 /* Build configuration list for PBXNativeTarget "HumanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AF667F1A5C2A28005BFB40 /* Debug */,
+				B6AF66801A5C2A28005BFB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6AF66501A5C2A28005BFB40 /* Project object */;
+}
