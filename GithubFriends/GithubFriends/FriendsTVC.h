@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FriendsTVC.h
 //  GithubFriends
 //
 //  Created by Bobby Towers on 1/8/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FriendsTVC : UITableViewController
 
 @end
-

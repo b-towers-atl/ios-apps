@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		B63DF0DA1A5EC9E600C2BE68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B63DF0D91A5EC9E600C2BE68 /* main.m */; };
 		B63DF0DD1A5EC9E600C2BE68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B63DF0DC1A5EC9E600C2BE68 /* AppDelegate.m */; };
-		B63DF0E01A5EC9E600C2BE68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63DF0DF1A5EC9E600C2BE68 /* ViewController.m */; };
-		B63DF0E31A5EC9E600C2BE68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63DF0E11A5EC9E600C2BE68 /* Main.storyboard */; };
 		B63DF0E51A5EC9E600C2BE68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63DF0E41A5EC9E600C2BE68 /* Images.xcassets */; };
 		B63DF0E81A5EC9E600C2BE68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63DF0E61A5EC9E600C2BE68 /* LaunchScreen.xib */; };
 		B63DF0F41A5EC9E600C2BE68 /* GithubFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B63DF0F31A5EC9E600C2BE68 /* GithubFriendsTests.m */; };
+		B63DF0FF1A5ECB8300C2BE68 /* FriendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B63DF0FE1A5ECB8300C2BE68 /* FriendsTVC.m */; };
+		B63DF1021A5ECB9500C2BE68 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B63DF1011A5ECB9500C2BE68 /* FriendCell.m */; };
+		B63DF1051A5EE36300C2BE68 /* NewFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B63DF1041A5EE36300C2BE68 /* NewFriendVC.m */; };
+		B63DF1081A5EE37800C2BE68 /* FriendDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B63DF1071A5EE37800C2BE68 /* FriendDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,19 @@
 		B63DF0D91A5EC9E600C2BE68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B63DF0DB1A5EC9E600C2BE68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B63DF0DC1A5EC9E600C2BE68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B63DF0DE1A5EC9E600C2BE68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B63DF0DF1A5EC9E600C2BE68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B63DF0E21A5EC9E600C2BE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B63DF0E41A5EC9E600C2BE68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B63DF0E71A5EC9E600C2BE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B63DF0ED1A5EC9E600C2BE68 /* GithubFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63DF0F21A5EC9E600C2BE68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63DF0F31A5EC9E600C2BE68 /* GithubFriendsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubFriendsTests.m; sourceTree = "<group>"; };
+		B63DF0FD1A5ECB8300C2BE68 /* FriendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTVC.h; sourceTree = "<group>"; };
+		B63DF0FE1A5ECB8300C2BE68 /* FriendsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTVC.m; sourceTree = "<group>"; };
+		B63DF1001A5ECB9500C2BE68 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		B63DF1011A5ECB9500C2BE68 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		B63DF1031A5EE36300C2BE68 /* NewFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendVC.h; sourceTree = "<group>"; };
+		B63DF1041A5EE36300C2BE68 /* NewFriendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendVC.m; sourceTree = "<group>"; };
+		B63DF1061A5EE37800C2BE68 /* FriendDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailVC.h; sourceTree = "<group>"; };
+		B63DF1071A5EE37800C2BE68 /* FriendDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +88,11 @@
 		B63DF0D61A5EC9E600C2BE68 /* GithubFriends */ = {
 			isa = PBXGroup;
 			children = (
-				B63DF0DB1A5EC9E600C2BE68 /* AppDelegate.h */,
-				B63DF0DC1A5EC9E600C2BE68 /* AppDelegate.m */,
-				B63DF0DE1A5EC9E600C2BE68 /* ViewController.h */,
-				B63DF0DF1A5EC9E600C2BE68 /* ViewController.m */,
-				B63DF0E11A5EC9E600C2BE68 /* Main.storyboard */,
-				B63DF0E41A5EC9E600C2BE68 /* Images.xcassets */,
-				B63DF0E61A5EC9E600C2BE68 /* LaunchScreen.xib */,
+				B63DF1031A5EE36300C2BE68 /* NewFriendVC.h */,
+				B63DF1041A5EE36300C2BE68 /* NewFriendVC.m */,
+				B63DF1061A5EE37800C2BE68 /* FriendDetailVC.h */,
+				B63DF1071A5EE37800C2BE68 /* FriendDetailVC.m */,
+				B63DF1091A5EE3A800C2BE68 /* List */,
 				B63DF0D71A5EC9E600C2BE68 /* Supporting Files */,
 			);
 			path = GithubFriends;
@@ -96,6 +101,10 @@
 		B63DF0D71A5EC9E600C2BE68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B63DF0DB1A5EC9E600C2BE68 /* AppDelegate.h */,
+				B63DF0DC1A5EC9E600C2BE68 /* AppDelegate.m */,
+				B63DF0E41A5EC9E600C2BE68 /* Images.xcassets */,
+				B63DF0E61A5EC9E600C2BE68 /* LaunchScreen.xib */,
 				B63DF0D81A5EC9E600C2BE68 /* Info.plist */,
 				B63DF0D91A5EC9E600C2BE68 /* main.m */,
 			);
@@ -117,6 +126,17 @@
 				B63DF0F21A5EC9E600C2BE68 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B63DF1091A5EE3A800C2BE68 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B63DF0FD1A5ECB8300C2BE68 /* FriendsTVC.h */,
+				B63DF0FE1A5ECB8300C2BE68 /* FriendsTVC.m */,
+				B63DF1001A5ECB9500C2BE68 /* FriendCell.h */,
+				B63DF1011A5ECB9500C2BE68 /* FriendCell.m */,
+			);
+			name = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63DF0E31A5EC9E600C2BE68 /* Main.storyboard in Resources */,
 				B63DF0E81A5EC9E600C2BE68 /* LaunchScreen.xib in Resources */,
 				B63DF0E51A5EC9E600C2BE68 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63DF0E01A5EC9E600C2BE68 /* ViewController.m in Sources */,
 				B63DF0DD1A5EC9E600C2BE68 /* AppDelegate.m in Sources */,
+				B63DF1051A5EE36300C2BE68 /* NewFriendVC.m in Sources */,
+				B63DF0FF1A5ECB8300C2BE68 /* FriendsTVC.m in Sources */,
+				B63DF1081A5EE37800C2BE68 /* FriendDetailVC.m in Sources */,
 				B63DF0DA1A5EC9E600C2BE68 /* main.m in Sources */,
+				B63DF1021A5ECB9500C2BE68 /* FriendCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +266,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B63DF0E11A5EC9E600C2BE68 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B63DF0E21A5EC9E600C2BE68 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B63DF0E61A5EC9E600C2BE68 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
