@@ -342,6 +342,7 @@
         
         // hopefully we have 9 subviews because we have 9 buttons/titles
         [button setTitle:@"" forState:UIControlStateNormal];
+        button.backgroundColor = playerColors[0];
         
     }
     
