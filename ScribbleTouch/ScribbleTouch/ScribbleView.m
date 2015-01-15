@@ -83,6 +83,11 @@
         UIColor * strokeColor = scribble[@"strokeColor"];
         [strokeColor set];
         
+        CGContextSetAlpha(context, [scribble[@"strokeOpacity"] floatValue]);
+        
+        CGContextSetBlendMode(context, kCGBlendModeScreen);
+        CGContextSetBlendMode(context, kCGBlendModeMultiply);
+        
         CGPoint firstPoint = [scribble[@"points"][0] CGPointValue];
         CGContextMoveToPoint(context, firstPoint.x, firstPoint.y);
         

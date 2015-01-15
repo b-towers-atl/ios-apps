@@ -18,6 +18,9 @@
     NSMutableDictionary * currentScribble;
     UIColor * selectedColor;
     int selectedStrokeWidth;
+    float selectedAlpha;
+    
+    ScribbleView * sView;
 }
 
 - (void)viewDidLoad {
@@ -26,6 +29,7 @@
     
     selectedColor = [UIColor blackColor];
     selectedStrokeWidth = 4;
+    selectedAlpha = 1;
     
 }
 
@@ -40,6 +44,37 @@
     
     // value contains the sender's current value
     selectedStrokeWidth = sender.value;
+    
+}
+
+- (IBAction)changeOpacity:(UISlider *)sender {
+    
+    selectedAlpha = sender.value;
+    
+}
+
+- (IBAction)clearPage:(UIButton *)sender {
+
+    [sView.scribbles removeAllObjects];
+    
+    [self.view setNeedsDisplay];
+
+}
+
+- (IBAction)eraser:(UIButton *)sender {
+    
+    selectedColor = sender.backgroundColor;
+    selectedAlpha = 1;
+    
+}
+
+- (IBAction)scribbleUndo:(UIButton *)sender {
+    
+    [sView.scribbles removeObjectIdenticalTo:currentScribble];
+    
+    currentScribble = sView.scribbles.lastObject;
+    
+    [self.view setNeedsDisplay];
     
 }
 
@@ -69,6 +104,7 @@
                          @"fillColor":selectedColor,
                          @"strokeColor":selectedColor,
                          @"strokeWidth": @(selectedStrokeWidth),
+                         @"strokeOpacity": @(selectedAlpha),
                          @"points": [@[[NSValue valueWithCGPoint:location]] mutableCopy]
                          // NSValue is the class, takes the
                          // NSValue is the carrier ship, but can only contain specific types of cargo
@@ -82,7 +118,7 @@
     // previously, self.view would not work alone since it does not think it is a ScribbleView yet
     // then we need to cast (ScribbleView *)self.view to make them compatible
     // it is warning you that "I think it is UIView type, but you want ScribbleView type"
-    ScribbleView * sView = (ScribbleView *)self.view;
+    sView = (ScribbleView *)self.view;
     
     // sView.scribbles is running the getter method
     // addObject currentScribble to the scribbles array

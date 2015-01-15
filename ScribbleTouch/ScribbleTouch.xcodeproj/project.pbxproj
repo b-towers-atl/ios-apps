@@ -15,6 +15,7 @@
 		B6ED996D1A66C79A00D12F83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6ED996B1A66C79A00D12F83 /* LaunchScreen.xib */; };
 		B6ED99791A66C79A00D12F83 /* ScribbleTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ED99781A66C79A00D12F83 /* ScribbleTouchTests.m */; };
 		B6ED99841A66C82300D12F83 /* ScribbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ED99831A66C82300D12F83 /* ScribbleView.m */; };
+		B6ED99B11A67341B00D12F83 /* RoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ED99B01A67341B00D12F83 /* RoundButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		B6ED99781A66C79A00D12F83 /* ScribbleTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleTouchTests.m; sourceTree = "<group>"; };
 		B6ED99821A66C82300D12F83 /* ScribbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleView.h; sourceTree = "<group>"; };
 		B6ED99831A66C82300D12F83 /* ScribbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleView.m; sourceTree = "<group>"; };
+		B6ED99AF1A67341B00D12F83 /* RoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundButton.h; sourceTree = "<group>"; };
+		B6ED99B01A67341B00D12F83 /* RoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		B6ED995B1A66C79A00D12F83 /* ScribbleTouch */ = {
 			isa = PBXGroup;
 			children = (
+				B6ED99AF1A67341B00D12F83 /* RoundButton.h */,
+				B6ED99B01A67341B00D12F83 /* RoundButton.m */,
 				B6ED99821A66C82300D12F83 /* ScribbleView.h */,
 				B6ED99831A66C82300D12F83 /* ScribbleView.m */,
 				B6ED99631A66C79A00D12F83 /* ViewController.h */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6ED99651A66C79A00D12F83 /* ViewController.m in Sources */,
+				B6ED99B11A67341B00D12F83 /* RoundButton.m in Sources */,
 				B6ED99621A66C79A00D12F83 /* AppDelegate.m in Sources */,
 				B6ED99841A66C82300D12F83 /* ScribbleView.m in Sources */,
 				B6ED995F1A66C79A00D12F83 /* main.m in Sources */,

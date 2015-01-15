@@ -1,25 +1,24 @@
 //
-//  PrettyButton.m
-//  First App
+//  RoundButton.m
+//  ScribbleTouch
 //
-//  Created by Bobby Towers on 1/5/15.
+//  Created by Bobby Towers on 1/14/15.
 //  Copyright (c) 2015 Bobby Towers. All rights reserved.
 //
 
-#import "PrettyButton.h"
+#import "RoundButton.h"
 
-@implementation PrettyButton
+@implementation RoundButton
 
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
-
 - (void)drawRect:(CGRect)rect {
-    // Drawing code
     
-    self.layer.cornerRadius = self.cornerSize;
+    self.layer.cornerRadius = self.cornerRadius / 2;
     self.layer.masksToBounds = YES;
     
 }
+
 
 @end
