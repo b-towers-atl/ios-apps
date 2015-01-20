@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZmO-Li-xXa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFB-Pa-6zJ">
+                                <rect key="frame" x="0.0" y="65" width="320" height="320"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pFB-Pa-6zJ" secondAttribute="height" multiplier="1:1" id="0mG-nV-loJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-zw-5ac">
+                                <rect key="frame" x="120" y="436" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Dhb-JB-Peh"/>
+                                    <constraint firstAttribute="height" constant="80" id="v4t-Hs-cXX"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSP-iU-Ll0">
+                                <rect key="frame" x="49" y="456" width="40" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="IP7-7E-jz1"/>
+                                    <constraint firstAttribute="height" constant="40" id="Lqv-SJ-YcT"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pFB-Pa-6zJ" secondAttribute="trailing" constant="-16" id="06A-AB-ivR"/>
+                            <constraint firstAttribute="centerX" secondItem="ddd-zw-5ac" secondAttribute="centerX" id="OUB-yj-7Wz"/>
+                            <constraint firstItem="ddd-zw-5ac" firstAttribute="leading" secondItem="iSP-iU-Ll0" secondAttribute="trailing" constant="31" id="PWi-Eb-yrG"/>
+                            <constraint firstItem="iSP-iU-Ll0" firstAttribute="top" secondItem="pFB-Pa-6zJ" secondAttribute="bottom" constant="71" id="WCZ-Gv-rZN"/>
+                            <constraint firstItem="ddd-zw-5ac" firstAttribute="top" secondItem="pFB-Pa-6zJ" secondAttribute="bottom" constant="51" id="imN-Nf-Rti"/>
+                            <constraint firstItem="pFB-Pa-6zJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="uJx-n8-Mkq"/>
+                            <constraint firstItem="pFB-Pa-6zJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="45" id="z9x-hL-ji1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Il-a2-kWw"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="cameraView" destination="pFB-Pa-6zJ" id="h0H-E2-phB"/>
+                        <outlet property="openPhotoLibraryButton" destination="iSP-iU-Ll0" id="fWp-kI-Zhw"/>
+                        <outlet property="takeMediaButton" destination="ddd-zw-5ac" id="EXT-C1-Imi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="136"/>
+        </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="nAg-UJ-PNC">
+            <objects>
+                <viewController storyboardIdentifier="filterVC" id="LLv-mI-Hyt" customClass="FilterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9By-i6-caD"/>
+                        <viewControllerLayoutGuide type="bottom" id="x5r-ZN-sJP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FnC-nZ-RpU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCZ-Kn-mrM">
+                                <rect key="frame" x="0.0" y="65" width="320" height="320"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="filterImageView" destination="ZCZ-Kn-mrM" id="yLV-m0-IPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Dw-X0-CaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dHI-1I-o7H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZmO-Li-xXa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1WR-D4-1Gj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="uzi-9r-xw9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yP0-Gk-1X3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="136"/>
+        </scene>
+    </scenes>
+</document>
