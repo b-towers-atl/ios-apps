@@ -6,8 +6,12 @@
 //  Copyright (c) 2015 Bobby Towers. All rights reserved.
 //
 
+// importing from a header file
 #import "ViewController.h"
 #import "FilterViewController.h"
+
+// importing from a framework
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
@@ -16,8 +20,13 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *openPhotoLibraryButton;
 @property (weak, nonatomic) IBOutlet UIButton *takeMediaButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopRecordingButton;
 
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mediaChoiceButton;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *cameraChoiceButton;
+
 
 @end
 
@@ -29,11 +38,13 @@
     
     [self.openPhotoLibraryButton addTarget:self action:@selector(openPhotoLibrary) forControlEvents:UIControlEventTouchUpInside];
 
+    
     self.cameraPickerController = [[UIImagePickerController alloc] init];
     self.cameraPickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-    self.cameraPickerController.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+    self.cameraPickerController.cameraDevice = UIImagePickerControllerCameraDeviceRear;
     self.cameraPickerController.showsCameraControls = NO;
     self.cameraPickerController.delegate = self;
+    self.cameraPickerController.mediaTypes = @[(NSString *)kUTTypeImage, (NSString *)kUTTypeMovie];
     
     // gets the width and height from the origin 0,0
     // a better name for cameraView would be cameraHolderView
@@ -42,9 +53,66 @@
     [self.cameraView addSubview:self.cameraPickerController.view];
     
     
+    // this is commented out because of the next line
 //    [self.takeMediaButton addTarget:self action:@selector(takeMedia) forControlEvents:UIControlEventTouchUpInside];
+    
     // (takePicture) showed up because it is a method on UIImagePickerController when we changed our target from self to self.cameraPickerController
     [self.takeMediaButton addTarget:self.cameraPickerController action:@selector(takePicture) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
+    
+    // this is for our toggle segmented control (Photo/Video)
+    [self.mediaChoiceButton addTarget:self action:@selector(changeMediaType) forControlEvents:UIControlEventValueChanged];
+    
+    // this is to toggle the rear and front camera
+    [self.cameraChoiceButton addTarget:self action:@selector(changeCameraType) forControlEvents:UIControlEventValueChanged];
+    
+    
+}
+
+- (void)changeMediaType {
+    
+    self.cameraPickerController.cameraCaptureMode = (self.mediaChoiceButton.selectedSegmentIndex == 0) ? UIImagePickerControllerCameraCaptureModePhoto : UIImagePickerControllerCameraCaptureModeVideo;
+    
+    switch (self.mediaChoiceButton.selectedSegmentIndex) {
+        case 0: // Photo
+            
+            // remove video capture
+            [self.takeMediaButton removeTarget:self.cameraPickerController action:@selector(startVideoCapture) forControlEvents:UIControlEventTouchUpInside];
+            
+            [self.mediaChoiceButton addTarget:self action:@selector(changeMediaType) forControlEvents:UIControlEventValueChanged];
+        
+            
+            break;
+            
+        case 1: // Video
+            // add video capture, end video capture (probably delegates
+        
+            // removes takePicture from takeMediaButton
+            [self.takeMediaButton removeTarget:self.cameraPickerController action:@selector(takePicture) forControlEvents:UIControlEventTouchUpInside];
+            
+            [self.takeMediaButton addTarget:self action:@selector(changeMediaType) forControlEvents:UIControlEventValueChanged];
+            
+            // stop video capture
+            [self.stopRecordingButton addTarget:self action:@selector(stopVideoCapture) forControlEvents:UIControlEventTouchUpInside];
+            
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    // we move this code to case 1 to remove picture mode so we can set up for video mode
+//    [self.takeMediaButton removeTarget:self.cameraPickerController action:@selector(takePicture) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)changeCameraType {
+    
+    self.cameraPickerController.cameraDevice = (self.cameraChoiceButton.selectedSegmentIndex == 0) ? UIImagePickerControllerCameraDeviceRear : UIImagePickerControllerCameraDeviceFront;
+    
     
 }
 
