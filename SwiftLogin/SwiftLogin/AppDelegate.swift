@@ -15,6 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        // [Optional] Power your app with Local Datastore. For more info, go to
+        // https://parse.com/docs/ios_guide#localdatastore/iOS
+//        [Parse enableLocalDatastore];
+        
+        // Initialize Parse.
+//        [Parse setApplicationId:@"3NNzBOj9mZmoAX6NCqXC8IyhHaoNYKiI7XSqhvO5"
+//        clientKey:@"75HEsFQtbUssmqfTImGgq5BMH8c2wgGlID9Y66Vi"];
+        
+        Parse.setApplicationId("3NNzBOj9mZmoAX6NCqXC8IyhHaoNYKiI7XSqhvO5",
+            clientKey: "75HEsFQtbUssmqfTImGgq5BMH8c2wgGlID9Y66Vi")
+        
+        // [Optional] Track statistics around application opens.
+//        [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+        
         // Override point for customization after application launch.
         return true
     }
