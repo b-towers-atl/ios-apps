@@ -9,13 +9,13 @@
 /*
 Homework 2/2/15
 
--make the map view show your current location (not as an annotation, but as the blue dot)
++1. make the map view show your current location (not as an annotation, but as the blue dot)
 
--make the "annotation view" show using "title" on an annotation (make the title be the name of the venue)
++2. make the "annotation view" show using "title" on an annotation (make the title be the name of the venue)
 
--make the mapview zoom to the annotations (maybe look for a way to make a region based on the annotations)
++3. make the mapview zoom to the annotations (maybe look for a way to make a region based on the annotations)
 
--change the pin color
++4. change the pin color
 */
 
 import UIKit
@@ -28,7 +28,7 @@ import CoreLocation
 
 var onceToken: dispatch_once_t = 0
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     var locationManager = CLLocationManager()
     
@@ -37,9 +37,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mapView.delegate = self
+        
 //        var mapView = MKMapView(frame: view.frame)
         mapView.frame = view.frame
         
+        // #1
+        mapView.showsUserLocation = true
         
         view.addSubview(mapView)
         
@@ -82,6 +86,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 
                 self.createAnnotationsWithVenues(venues)
                 
+                
+                // objective-c way, #3
+//                [mapView showAnnotations:yourAnnotationArray animated:YES];
+//                yourAnnotationArray = mapView.annotations;
+                
+                var annotationsArray = self.mapView.annotations
+                self.mapView.showAnnotations(annotationsArray, animated: true)
+                
             }
             
         }
@@ -94,6 +106,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         for venue in venues as [[String:AnyObject]] {
             
+            let locationName = venue["name"] as String
+            
             let locationInfo = venue["location"] as [String:AnyObject]
             
             let lat = locationInfo["lat"] as CLLocationDegrees
@@ -105,7 +119,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             let annotation = MKPointAnnotation()
             annotation.setCoordinate(coord)
             
+            // #2
             mapView.addAnnotation(annotation)
+            annotation.title = locationName
             
         }
         
@@ -116,6 +132,31 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
         
         
+    }
+    
+    // #3
+    func mapView(_mapView: MKMapView!,
+        viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+            
+            if annotation is MKUserLocation {
+                //return nil so map view draws "blue dot" for standard user location
+                return nil
+            }
+            
+            let reuseId = "pin"
+            
+            var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as? MKPinAnnotationView
+            if pinView == nil {
+                pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+                pinView!.canShowCallout = true
+                pinView!.animatesDrop = true
+                pinView!.pinColor = .Green
+            }
+            else {
+                pinView!.annotation = annotation
+            }
+            
+            return pinView
     }
 
 
