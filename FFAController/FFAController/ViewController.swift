@@ -67,35 +67,66 @@ class ViewController: UIViewController, MCSessionDelegate, MCNearbyServiceAdvert
     }
 */
     
+    func sendDataWithInfo(info: [String:String]) {
+    
+        var moveInfo = info
+        
+        // this turns our dictionary into an NSData object
+        let moveData = NSJSONSerialization.dataWithJSONObject(moveInfo, options: NSJSONWritingOptions.allZeros, error: nil)
+        
+        println(roomPeerID)
+        println(session.connectedPeers)
+        
+        if let roomPeerID = roomPeerID {
+            
+            var error: NSError?
+            
+            session.sendData(moveData, toPeers: [roomPeerID], withMode: MCSessionSendDataMode.Reliable, error: &error)
+            
+            println(error)
+            
+        }
+    }
+    
     @IBAction func up(sender: AnyObject) {
 //        up() function but use last location arguments, where do we get last location?
+    
+        sendDataWithInfo(["direction":"up"])
+        
     }
     func up(x: CGFloat, y: CGFloat) {
         movement(x, y: y, xChange: 0, yChange: -10)
     }
     
     @IBAction func down(sender: AnyObject) {
+        
+//        sendDataWithInfo(["direction":"down"])
     }
     func down(x: CGFloat, y: CGFloat) {
         movement(x, y: y, xChange: 0, yChange: 10)
     }
     
     @IBAction func left(sender: AnyObject) {
+        
+        sendDataWithInfo(["direction":"left"])
     }
     func left(x: CGFloat, y: CGFloat) {
         movement(x, y: y, xChange: -10, yChange: 0)
     }
     
     @IBAction func right(sender: AnyObject) {
+        sendDataWithInfo(["direction":"right"])
     }
     func right(x: CGFloat, y: CGFloat) {
         movement(x, y: y, xChange: 10, yChange: 0)
     }
     
     @IBAction func fireNormal(sender: AnyObject) {
+        sendDataWithInfo(["fire":"normal"])
     }
     
     @IBAction func fireSpecial(sender: AnyObject) {
+        sendDataWithInfo(["fire":"special"])
     }
     
     var upDir = "up"
