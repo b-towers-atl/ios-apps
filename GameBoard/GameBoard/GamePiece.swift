@@ -83,8 +83,6 @@ class GamePiece: UIView {
         
         
     }
-    
-    
 
     // init coder is something that is called by storyboard
     // only classes that go on a storyboard will require this
