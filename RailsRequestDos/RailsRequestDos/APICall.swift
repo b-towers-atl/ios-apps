@@ -48,7 +48,6 @@ class User {
     }
     
     
-    
     func register(username: String, email: String, password: String) {
         
         let options: [String:AnyObject] = [
