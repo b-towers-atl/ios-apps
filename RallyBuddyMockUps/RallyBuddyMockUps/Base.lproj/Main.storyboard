@@ -448,6 +448,24 @@
             <point key="canvasLocation" x="310" y="964"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="oeP-pR-ECe">
+            <objects>
+                <viewController id="y8Z-lM-UkF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Hy-aF-0Y8"/>
+                        <viewControllerLayoutGuide type="bottom" id="W2M-aS-O2Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cWP-O3-e7f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S7J-kK-4Xr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432" y="1611"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="Ccf-HX-0dq">
             <objects>
                 <viewController id="jne-OD-gvy" customClass="ViewController" customModule="RallyBuddyMockUps" customModuleProvider="target" sceneMemberID="viewController">
@@ -565,7 +583,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ICP-Mi-RGJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643" y="964"/>
+            <point key="canvasLocation" x="975" y="964"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xMe-1b-0IF">
@@ -685,7 +703,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTB-YO-Vnb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="964"/>
+            <point key="canvasLocation" x="1307" y="964"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rIH-dZ-Y8L">
@@ -805,7 +823,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2i-E2-wmb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1309" y="964"/>
+            <point key="canvasLocation" x="1641" y="964"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="j08-of-x8M">
@@ -925,7 +943,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfl-BB-grS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643" y="1588"/>
+            <point key="canvasLocation" x="643" y="964"/>
         </scene>
     </scenes>
     <resources>
