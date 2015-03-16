@@ -16,7 +16,7 @@ import GameKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, GKGameCenterControllerDelegate {
 
-    var attacks = 0
+    var attacks: Int64 = 0
     
     @IBOutlet weak var attackLabel: UILabel!
 
@@ -27,6 +27,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, GKGameCe
         attackLabel.text = "Attacks: \(attacks)"
         
         // submit attack score
+        
+        var score = GKScore(leaderboardIdentifier: "attack_leaderboard")
+        score.value = attacks
+        GKScore.reportScores([score], withCompletionHandler: { (error) -> Void in
+            
+            println("score reported")
+            
+        })
         
     }
     
