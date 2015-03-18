@@ -63,6 +63,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         // we pass a pointer as a parameter, so when it changes in the method, it is changing the actual global property above at the top (onceToken)
         // dispatch_once takes whatever code and only runs it once for the lifetime of the application
+        
+        
         dispatch_once(&onceToken) { () -> Void in
             
             println(locations.last)
